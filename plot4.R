@@ -24,7 +24,7 @@ plot4 <- function(){
   plot(cleandates, as.numeric(powerset$Sub_metering_1), type="l", xlab="", ylab="Energy sub metering")
   lines(cleandates, as.numeric(powerset$Sub_metering_2), type="l", col="red")
   lines(cleandates, as.numeric(powerset$Sub_metering_3), type="l", col="blue")
-  legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=1, col=c("black", "red", "blue"))
+  legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=1, col=c("black", "red", "blue"), bty="n")
   
   ## bottom right
   plot(cleandates, as.numeric(powerset$Global_reactive_power), type="l", xlab="datetime", ylab="Global_reactive_power")
